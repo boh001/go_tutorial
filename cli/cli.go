@@ -6,6 +6,7 @@ import (
 	"flag"
 	"fmt"
 	"os"
+	"runtime"
 )
 
 func usage() {
@@ -13,7 +14,7 @@ func usage() {
 	fmt.Println("Please use the following flags:\n\n")
 	fmt.Println("-port: 		Set the Port of the server\n")
 	fmt.Println("-mod: 			Choose between 'html' and 'rest'\n\n")
-	os.Exit(0)
+	runtime.Goexit()
 }
 func Start() {
 
